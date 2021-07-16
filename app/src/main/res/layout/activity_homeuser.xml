@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.HomeUserActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextHead"
+                android:text="SYARAT PEMBUATAN SKMK"
+                android:layout_marginTop="30dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:background="@color/platinum">
+                        <TextView
+                            android:text="No"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:text="Persyaratan"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:text="1."
+                            android:textAlignment="center"
+                            style="@style/TextField"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:text="Surat Makam (Format PDF)"
+                            style="@style/TextField"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:background="@color/platinum"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:text="2."
+                            android:textAlignment="center"
+                            style="@style/TextField"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:text="Surat Pernyataan Bermaterai (Format PDF)"
+                            style="@style/TextField"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:text="3."
+                            android:textAlignment="center"
+                            style="@style/TextField"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:text="Surat RT/RW (Format PDF)"
+                            style="@style/TextField"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:background="@color/platinum"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:text="4."
+                            android:textAlignment="center"
+                            style="@style/TextField"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:text="KTP Pengurus (Format JPEG/JPG/PDF)"
+                            style="@style/TextField"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:text="5."
+                            android:textAlignment="center"
+                            style="@style/TextField"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:text="KTP Almarhum (Format JPEG/JPG/PDF)"
+                            style="@style/TextField"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:background="@color/platinum"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:text="6."
+                            android:textAlignment="center"
+                            style="@style/TextField"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:text="KK Almarhum (Format JPEG/JPG/PDF)"
+                            style="@style/TextField"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/homeuser_skmk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/cornflower_blue"
+                android:text="KLIK DISINI UNTUK MEMBUAT"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="10dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextHead"
+                android:text="SYARAT PEMBUATAN SKPK"
+                android:layout_marginTop="50dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:background="@color/platinum">
+                        <TextView
+                            android:text="No"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:text="Persyaratan"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:text="1."
+                            android:textAlignment="center"
+                            style="@style/TextField"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:text="Surat RT/RW (Format PDF)"
+                            style="@style/TextField"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    <TableRow
+                        android:background="@color/platinum"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:text="2."
+                            android:textAlignment="center"
+                            style="@style/TextField"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:text="KTP Almarhum (Format JPEG/JPG/PDF)"
+                            style="@style/TextField"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:text="3."
+                            android:textAlignment="center"
+                            style="@style/TextField"
+                            android:textColor="@color/black"
+                            android:layout_marginEnd="20dp"/>
+                        <TextView
+                            android:text="KK Almarhum (Format JPEG/JPG/PDF)"
+                            style="@style/TextField"
+                            android:textColor="@color/black"/>
+                    </TableRow>
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/homeuser_skpk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/cornflower_blue"
+                android:text="KLIK DISINI UNTUK MEMBUAT"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

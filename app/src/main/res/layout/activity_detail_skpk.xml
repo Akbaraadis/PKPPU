@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.skpk.DetailSkpkActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/detail_skmk_tv_rtrw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextField"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Surat RT/RW"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/detail_skpk_rtrw"
+                android:enabled="false"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_rectangle"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:editable="false"
+                app:layout_constraintTop_toBottomOf="@+id/detail_skmk_tv_rtrw"
+                app:layout_constraintStart_toStartOf="@id/detail_skmk_tv_rtrw"/>
+
+            <TextView
+                android:id="@+id/detail_skpk_tv_ktp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextField"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="KTP Almarhum"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintTop_toBottomOf="@id/detail_skpk_rtrw"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/detail_skpk_ktp"
+                android:enabled="false"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_rectangle"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:editable="false"
+                app:layout_constraintTop_toBottomOf="@+id/detail_skpk_tv_ktp"
+                app:layout_constraintStart_toStartOf="@id/detail_skmk_tv_rtrw"/>
+
+            <TextView
+                android:id="@+id/detail_skpk_tv_kk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextField"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="KK Almarhum"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintTop_toBottomOf="@id/detail_skpk_ktp"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/detail_skpk_kk"
+                android:enabled="false"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_rectangle"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:editable="false"
+                app:layout_constraintTop_toBottomOf="@+id/detail_skpk_tv_kk"
+                app:layout_constraintStart_toStartOf="@id/detail_skmk_tv_rtrw"/>
+
+            <TextView
+                android:id="@+id/detail_skpk_tv_nik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextField"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="NIK"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintTop_toBottomOf="@id/detail_skpk_kk"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/detail_skpk_nik"
+                android:enabled="false"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_rectangle"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:editable="false"
+                app:layout_constraintTop_toBottomOf="@+id/detail_skpk_tv_nik"
+                app:layout_constraintStart_toStartOf="@id/detail_skmk_tv_rtrw"/>
+
+            <TextView
+                android:id="@+id/detail_skpk_tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextField"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="Status"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:layout_constraintTop_toBottomOf="@id/detail_skpk_nik"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <EditText
+                android:id="@+id/detail_skpk_status"
+                android:enabled="false"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/shape_rectangle"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:editable="false"
+                app:layout_constraintTop_toBottomOf="@+id/detail_skpk_tv_status"
+                app:layout_constraintStart_toStartOf="@id/detail_skmk_tv_rtrw"/>
+
+            <Button
+                android:id="@+id/detail_skpk_pending"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Pending"
+                android:backgroundTint="#FA8072"
+                android:layout_marginTop="50dp"
+                app:layout_constraintTop_toBottomOf="@id/detail_skpk_status"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/detail_skpk_approve"/>
+
+            <Button
+                android:id="@+id/detail_skpk_approve"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Approve"
+                android:backgroundTint="#6495ED"
+                android:layout_marginTop="50dp"
+                app:layout_constraintTop_toBottomOf="@id/detail_skpk_status"
+                app:layout_constraintStart_toEndOf="@id/detail_skpk_pending"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
