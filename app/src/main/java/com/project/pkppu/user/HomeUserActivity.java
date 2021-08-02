@@ -12,7 +12,7 @@ import com.project.pkppu.R;
 
 public class HomeUserActivity extends AppCompatActivity {
 
-    Button Skmk, Skpk;
+    Button Skmk, Skpk, About, Logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,8 @@ public class HomeUserActivity extends AppCompatActivity {
 
         Skmk = findViewById(R.id.homeuser_skmk);
         Skpk = findViewById(R.id.homeuser_skpk);
+        About = findViewById(R.id.homeuser_about);
+        Logout = findViewById(R.id.homeuser_logout);
 
         Skmk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +43,24 @@ public class HomeUserActivity extends AppCompatActivity {
                 Intent intent = new Intent(HomeUserActivity.this, SkpkActivity.class);
                 intent.putExtra("nik", nik);
                 startActivity(intent);
+            }
+        });
+
+        About.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeUserActivity.this, AboutActivity.class);
+                intent.putExtra("nik", nik);
+                startActivity(intent);
+            }
+        });
+
+        Logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeUserActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 

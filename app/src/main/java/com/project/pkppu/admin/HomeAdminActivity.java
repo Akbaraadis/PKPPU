@@ -11,11 +11,12 @@ import com.project.pkppu.LoginActivity;
 import com.project.pkppu.R;
 import com.project.pkppu.admin.skmk.SkmkAdminActivity;
 import com.project.pkppu.admin.skpk.SkpkAdminActivity;
+import com.project.pkppu.user.HomeUserActivity;
 import com.project.pkppu.user.SkpkActivity;
 
 public class HomeAdminActivity extends AppCompatActivity {
 
-    Button btn_skpk, btn_skmk;
+    Button btn_skpk, btn_skmk, btn_logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class HomeAdminActivity extends AppCompatActivity {
 
         btn_skmk = findViewById(R.id.homeadmin_skmk);
         btn_skpk = findViewById(R.id.homeadmin_skpk);
+        btn_logout = findViewById(R.id.homeadmin_logout);
 
         btn_skpk.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +42,15 @@ public class HomeAdminActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(HomeAdminActivity.this, SkmkAdminActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        btn_logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeAdminActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

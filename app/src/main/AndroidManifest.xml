@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PKPPU">
-        <activity android:name=".admin.skpk.DetailSkpkActivity"></activity>
+        <activity android:name=".user.AboutActivity"></activity>
+        <activity android:name=".admin.skpk.DetailSkpkActivity" />
         <activity android:name=".admin.skmk.DetailSkmkActivity" />
         <activity android:name=".admin.skpk.SkpkAdminActivity" />
         <activity android:name=".admin.skmk.SkmkAdminActivity" />
